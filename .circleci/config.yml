@@ -17,6 +17,7 @@ jobs:
       - run: "echo World"
 workflows:
   welcome:
+  # Run the welcome/run job in its own container
     jobs:
       - print_hello
       - print_world:
